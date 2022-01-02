@@ -1,4 +1,4 @@
 
 def testFunction():
 
-    print("Test Ok")
+    print("Test: Ok")

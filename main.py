@@ -3,8 +3,10 @@ from myLib import *
 
 def main():
 
-    print("call main()")
+    print("function main()")
 
     testFunction()
+
+print("call main()")
 
 main()

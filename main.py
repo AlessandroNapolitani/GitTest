@@ -3,7 +3,7 @@ from myLib import *
 
 def main():
 
-    print("main()")
+    print("call main()")
 
     testFunction()
 

@@ -1,6 +1,6 @@
 # GitTest
 Sample project for Git testing purposes
 ## Git
-Test version control
+Version control test
 ## GitHub
-Test project sharing
+Project sharing test

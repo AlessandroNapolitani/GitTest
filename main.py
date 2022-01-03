@@ -1,15 +1,26 @@
 import pygame
-from myLib import * 
+from my_lib import * 
 
-def main():
+def main(goodbye_str):
 
-    print("function main()")
+    global func_name
 
-    testFunction()
+    print_func()
+
+    set_func_name("test_Function()")
+
+    print_call()
+
+    test_Function()
+
+    print(goodbye_str)
 
 # Just a comment
 # we ci sono
+# we pure io
 
-print("call main()")
+set_func_name("main()")
 
-main()
+print_call()
+
+main("bye bye, the program is terminated")

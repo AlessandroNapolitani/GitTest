@@ -1,5 +1,5 @@
 # GitTest
-Sample project for Git testing purposes
+### Sample project for Git testing purposes
 ## Git
 Version control test
 ## GitHub

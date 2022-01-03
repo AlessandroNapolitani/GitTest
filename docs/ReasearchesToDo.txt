@@ -1,0 +1,72 @@
+
+EXPLORATION:
+
+	what is Kivy?
+
+	try using PYTHON ON LINUX
+
+	try using GIT + GITHUB in a shared environment (using multiple branches)
+
+	try using METRICS with wily + radon
+
+	WHAT IS PEP8? (rules for nice code) -> https://realpython.com/python-pep8/
+
+	Naming conventions -> https://blog.softhints.com/python-naming-convention-examples-classes-variables-underscore-files/#:~:text=Python%20convention%20for%20classes%20uses%20Pascal%20Case%20%28don%27t,start%20uppercase%20letters%20nouns%20e.g.%20Person%2C%20Animal%2C%20PersonAddress
+
+	try using PyTest (+ VSCode integration) 
+
+	try using OpenCV (compuer vision)
+
+	tutorials regarding TensorFlow
+
+	How to run Python apps on any platform -> https://www.androidauthority.com/how-to-run-python-1136524/
+
+DATA GRID:
+
+ - Matrix of Entry/Labels
+ - TreeView
+ - tkSheet
+ - pandastable
+
+DATABASES:
+
+ - Relational:
+
+	SQL Lite
+	mySQL
+	PostgreSQL * 
+
+ - NoSQL:
+
+	MongoDB
+	Redis
+	Cassandra *
+	Neo4j
+
+COURSES / TUTORIALS:
+
+	https://www.youtube.com/user/programmingknowledge 	(basic course)
+								(pytest)
+								(threading)
+								(numpy) * 
+								(open cv)
+
+	https://www.youtube.com/playlist?list=PLzMcBGfZo4-lp3jAExUCewBfMx3UZFkh5 (tech with Tim: pygame tutorial)
+
+
+	https://realpython.com/bonus/python-mastery-course/	*
+
+DOCUMENTATION:
+
+	https://realpython.com/python3-object-oriented-programming/
+
+	https://realpython.com/python-refactoring/
+	https://www.sciencedirect.com/topics/computer-science/refactoring
+
+	https://realpython.com/python-testing/
+
+	https://wiki.python.org/moin/PythonSpeed/PerformanceTips
+
+	
+
+	

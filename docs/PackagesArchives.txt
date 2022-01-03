@@ -1,0 +1,4 @@
+
+https://pypi.org/     (PyPI = Python Pakage Index)
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/

@@ -1,0 +1,126 @@
+
+ Virtual Environments
+ ____________________
+
+	- creation:
+		python -m venv [EnvDirectory]
+
+	- activation:		
+		[EnvDirectory]\Scripts\activate.bat
+
+	- deactivation:
+		[EnvDirectory]\Scripts\deactivate.bat	 /	deactivate
+
+	- removal:
+		del [EnvDirectory]
+
+
+ Packages Management
+ ___________________
+
+	- list installed packages:
+		pip list
+
+	- install:
+		pip install [PackageName]
+
+	- upgrade:
+		pip install --upgrade [PackageName]
+
+	- uninstall:
+		pip uninstall [PackageName]
+
+
+ Git / GitHub
+ ____________
+
+	- git version:
+		git --version
+
+	- setup:
+		git config --[level] user.name "[UserName]"
+		git config --[level] user.email [UserEmail]
+		git config --[level] core.editor "code --wait"  (for Visual Studio Code)
+		git config --[level] -e  (-> Default editor) 
+		git config --[level] core.autocrlf true         (for Windows OS)
+		git config --[level] core.autocrlf input        (for Mac OS / Linux)
+		
+		git config --[level] diff.tool vscode		(for Visual Studio Code)
+
+		git config --[level] difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"	
+
+		[level] = 	system 				(all users)
+				global 				(all current user's repos)
+				local  				(current repo)
+		
+		git config -h					(brief help)
+		git config --help 				(full help [space] -> next page / [q] -> exit)
+
+	- workflow:	
+		git init
+		git status
+		git status -s 					(status summary)
+		git ls-files 					(list staging content)
+		git add [Filename/Wildcards]
+		git rm  [Filename/Wildcards]     		(remove file from folder AND staging)
+		git mv  [OldFilename] [NewFilename] 		(rename file   in folder AND staging)
+		git rm --cached [Filename/Wildcards]     	(remove file from staging)
+		git mv --cached [OldFilename] [NewFilename] 	(rename file   in staging)
+		git restore [Filename/Wildcards]		(overwrite current file with staging version)
+		git restore --staged [Filename/Wildcards]	(overwrite file in staging with last committed version)
+		git restore --source=HEAD [Filename/Wildcards]  (retrieve a file from the last committed version)
+		git commit -m "[VersionDescription]"		
+		git commit  (-> Default editor) 
+		git commit -am "[VersionDescription]"		(skip staging)
+		git commit -a  (-> Default editor) 		(skip staging)
+		git add .gitignore    				(file content:__pycache__/
+								      *.log
+								      *.zip       )
+		git diff   					(compare working copy with staging)
+		git diff --staged				(compare staging with last commit)
+		git difftool					(compare working copy with staging in the default IDE)
+		git difftool --staged				(compare staging with last commit  in the default IDE)
+		git log						(show versions history [space] -> next page / [q] -> exit)
+		git log  --oneline				(brief history)					
+		git log  --reverse				(from oldest to latest)		
+		git show [ShortUniqueId]			(show specific committed version -differences from previous)
+		git show HEAD					(show last committed version -differences from previous)
+		git show HEAD~1					(show 2nd last committed version -differences from previous)
+		git show HEAD~2					(show 3rd last committed version- differences from previous)
+		git ls-tree [...]				(show committed version´s folder content)
+		git show [...]:[Path]/[Filename]		(show committed version -content of committed file)
+		git show [ObjectId]				(show committed version -content of committed file/directory)
+
+
+Git + Virtual Environments
+
+For Git users, in order to track project dependencies, continue below:
+While in the virtual environment, start by installing a package. For this example we will use pandas. Run pip install pandas
+Run deactivate to stop the virtual environment
+Initialize the repo by running git init
+Run echo ‘env' > .gitignore to include the env folder in the .gitignore file so the virtual environment is ignored in source control
+Run pip freeze > requirements.txt to place the dependencies in a text file to be committed. Freezing reads all the installed dependencies and then produces a text file with the name of the dependency and the installed version number.
+Run git add requirements.txt to check the file into source control.
+Commit the files and push to a repo.
+Congrats yet again! You have now properly set up your virtual environment with Git.
+
+
+ PyTest
+ ______
+
+	- workflow:	
+		....
+
+
+ Create Executable Files
+ _______________________
+
+	- setup:
+		pip install pyinstaller
+
+	- creation:
+		pyinstaller [Filename].py --onefile			(Exe file = Filename.EXE)
+		pyinstaller [Filename].py --noconsole --onefile		(No shell for GUI apps)
+		pyinstaller [Filename].py --name [ExeName] --onefile	(Exe file = ExeName.EXE)
+
+

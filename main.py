@@ -8,6 +8,7 @@ def main():
     testFunction()
 
 # Just a comment
+# we ci sono
 
 print("call main()")
 
